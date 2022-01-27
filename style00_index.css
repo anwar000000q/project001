@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body {
+  background-color: gray;
+}
+.continaire {
+  margin: auto;
+  border-radius: 20px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 50%;
+  display: flex;
+}
+.logo img {
+  margin: 10px;
+  width: 200px;
+}
+.list {
+  margin: auto;
+  width: 50%;
+}
+.list ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.list ul li {
+  /* margin-right: 20px; */
+  margin: 10px;
+}
+.list ul li a {
+  text-decoration: none;
+  color: #bdb8b8;
+  font-weight: bold;
+}
+.important {
+  color: black;
+  font-weight: bold;
+}
+/* ********section********* */
+section {
+  display: flex;
+}
+section .big_pic {
+  width: 50%;
+}
+section .big_pic img {
+  width: 100%;
+}
+section .title_men {
+  width: 50%;
+
+  margin: auto 0px;
+}
+.title_men {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title h3 {
+  font-size: 37px;
+  margin: 0px;
+}
+.title h1 {
+  font-size: 100px;
+  margin: 5px 0px;
+  font-weight: bold;
+}
+.btn {
+  display: flex;
+  margin: 50px;
+  text-align: center;
+}
+.btn1 {
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  width: 50%;
+  margin: 10px;
+  color: #ffff;
+  background-color: black;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.btn2 {
+  text-align: center;
+  border-radius: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  color: #ffff;
+  width: 50%;
+  margin: 10px;
+  background-color: #a095c9;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+/* ****************PARAGRAPH********************** */
+main {
+  display: flex;
+}
+.paragraph1 {
+  width: 33.33%;
+  display: flex;
+}
+/* .pic {
+  width: 50%;
+}
+.pic img {
+  height: 100%;
+} */
+
+.titel {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+.titel p {
+  font-weight: normal;
+
+  margin: 0px;
+  font-size: 19px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.paragraph2 {
+  width: 33.33%;
+  display: flex;
+}
+.paragraph3 {
+  width: 33.33%;
+  display: flex;
+}
+
+/* **************************************** */
+footer {
+  display: flex;
+  margin-top: 5px;
+}
+.footer1 {
+  display: flex;
+  width: 40%;
+}
+.icons {
+  display: flex;
+  margin: auto;
+}
+.icons a {
+  text-decoration: none;
+  color: black;
+}
+.ri-instagram-fill {
+  font-size: 30px;
+  margin: auto;
+}
+.ri-facebook-fill {
+  font-size: 30px;
+  margin: 3px;
+}
+.ri-twitter-fill {
+  font-size: 30px;
+  margin: 3px;
+}
+.ri-dribbble-line {
+  font-size: 30px;
+  margin: 3px;
+}
+.links_footer {
+  margin: auto;
+}
+.links_footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.links_footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.links_footer ul li {
+  margin: 0px 10px;
+}
+.copyrit {
+  width: 60%;
+}
+.copyrit h5 {
+  float: right;
+  margin-right: 20px;
+}
+
+/* ******************************************************* */
+@media screen and (max-width: 1600px) {
+  .menu_btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menu_btn {
+    display: none;
+  }
+  .list {
+    width: 70%;
+  }
+  .logo {
+    width: 30%;
+  }
+  section {
+    flex-direction: column;
+  }
+  section .big_pic {
+    width: 100%;
+    margin: 0px;
+  }
+  section .title_men {
+    width: 100%;
+  }
+  .title h1 {
+    text-align: center;
+  }
+  .title h3 {
+    text-align: center;
+    margin: 20px;
+  }
+  /* *************** */
+  main {
+    flex-direction: column;
+  }
+  .paragraph1 {
+    width: 100%;
+  }
+  .paragraph2 {
+    width: 100%;
+  }
+  .paragraph3 {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .footer1 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .copyrit {
+    width: 100%;
+  }
+  .copyrit h5 {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu_btn {
+    float: right;
+    display: flex;
+  }
+  .btn_menu {
+    margin: 20px 0px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .list {
+    width: 50%;
+    margin: 0px;
+  }
+  .list ul {
+    display: none;
+  }
+  /* .list ul li {
+    display: none;
+  } */
+}
+
+/* ********************** */
+@media screen and (max-width: 426px) {
+  .title h1 {
+    font-size: 50px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .btn {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .btn1 {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .btn2 {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .paragraph1 {
+    flex-direction: column;
+  }
+  .pic {
+    margin: auto;
+  }
+  .icons {
+    flex-direction: column;
+  }
+  .icons a {
+    margin: 20px auto;
+  }
+  .ri-instagram-fill {
+    font-size: 60px;
+  }
+  .ri-facebook-fill {
+    font-size: 60px;
+  }
+
+  .ri-twitter-fill {
+    font-size: 60px;
+  }
+  .ri-dribbble-line {
+    font-size: 60px;
+  }
+  .paragraph2 {
+    flex-direction: column;
+  }
+  .paragraph3 {
+    flex-direction: column;
+  }
+  .links_footer ul {
+    flex-direction: column;
+  }
+  .links_footer ul li {
+    margin: 36px auto;
+    font-size: 25px;
+  }
+}
